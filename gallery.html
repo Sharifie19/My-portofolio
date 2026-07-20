@@ -13,7 +13,8 @@
         .container {max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px;}
         h2 {color: #0077cc; border-bottom: 2px solid #0077cc; padding-bottom: 5px;}
         .gallery {display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;}
-        .gallery img {width: 250px; height: 200px; object-fit: cover; border-radius: 8px; border: 3px solid #0077cc;}
+        .gallery img, .gallery iframe {width: 250px; height: 200px; border-radius: 8px; border: 3px solid #0077cc;}
+        .gallery-item {text-align: center;}
         .btn {display: inline-block; padding: 10px 20px; background: #0077cc; color: white; text-decoration: none; border-radius: 4px; margin: 10px 5px;}
         .btn:hover {background: #005fa3;}
         footer {text-align: center; padding: 15px; background: #222; color: white; margin-top: 30px;}
@@ -27,11 +28,23 @@
         <a href="gallery.html">Gallery</a> | <a href="resume.html">Resume</a> | <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <h2>Photo Gallery</h2>
+        <h2>Photo & Video Gallery</h2>
         <div class="gallery">
-            <img src="DP WHITE.png" alt="My Photo">
-            <img src="computerlab.jpg" alt="Computer Lab">
-            <img src="certificate.jpg" alt="Certificate">
+            <div class="gallery-item">
+                <img src="DP WHITE.png" alt="My Photo">
+                <p><b>Profile Picture</b></p>
+            </div>
+            <div class="gallery-item">
+                <img src="computerlab.jpg" alt="Computer Lab">
+                <p><b>Computer Lab</b></p>
+            </div>
+            <div class="gallery-item">
+                <iframe src="https://www.youtube.com/embed/fG7Jqj5St80" 
+                title="YouTube video" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <p><b>My YouTube Short</b></p>
+            </div>
         </div>
         <center>
             <a href="services.html" class="btn">← Previous: Services</a>
